@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Hexagon Animation - Vector2D</title>
+    <script type="module" src="./app.js"></script>
+    <link rel="stylesheet" href="./styles/main.css"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="modulepreload"  href="./app.js"/>
+    <link rel="modulepreload"  href="./modules/crutils.js"/>
+    <link rel="modulepreload"  href="./modules/renderer2d.js"/>
+    <link rel="modulepreload"  href="./modules/vector2d.js"/>
+    <link rel="modulepreload"  href="./modules/hexagon.js"/>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div class="container" id="panel">
+      <h1>Hide panel : "p"</h1>
+      <label>FPS <span id="fpsDisplay">0</span></label>
+      <input id="fpsInput" type="range" min="5" max="240" step="5"/>
+      <label>Stroke Color</label>
+      <input id="strokeColor" type="color"/>
+      <label>Fill Color</label>
+      <input id="fillColor" type="color"/>
+      <label>Shape Size <span id="sizeDisplay">0</span></label>
+      <input id="sizeInput" type="range" min="4" max="128" step="2"/>
+      <label>Stroke Size <span id="strokeSizeDisplay">0</span></label>
+      <input id="strokeSizeInput" type="range" min="1" max="64" step="1"/>
+      <button id="startBut">Start</button>
+      <button id="pauseBut">Pause</button>
+      <button id="stopBut">Stop</button>
+      <button id="restartBut">Restart</button>
+    </div>
+</body>
+</html>

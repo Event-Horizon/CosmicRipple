@@ -1,0 +1,42 @@
+*{
+    box-sizing:border-box;
+  }
+  html,body{
+    overflow:hidden;
+    height:100vh;
+    height:100dvh;
+  }
+  #canvas{
+    position:absolute;
+    inset:0;
+    background:black;
+  }
+  .container{  
+    display:grid;
+    position:absolute;
+    top:0;
+    left:0;
+    margin:1em;
+    padding:0.5em;
+    color:white;
+    width: fit-content;
+    z-index:9999;
+    background:hsl(0 0% 50%/0.1);
+    border-radius:4px;
+  }
+  .container *{
+    margin-bottom:0.5em;
+  }
+  
+  .container h1{
+    font-size:1.25em;
+    font-weight:bold;
+  }
+  
+  .fpsContainer label{
+    padding:0.5em 0;
+  }
+  
+  .hide{
+    display:none;
+  }
