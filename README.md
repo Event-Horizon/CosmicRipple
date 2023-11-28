@@ -2,6 +2,8 @@
 
 ## About
 
+CosmicRipple is a CanvasRenderer
+
 This was a test concept to learn several things:
 1. how to manage canvas
 2. how to handle JS with Classes
