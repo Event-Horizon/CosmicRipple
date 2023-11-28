@@ -44,12 +44,19 @@ export default class Vector2D{
       if(!(vector instanceof Vector2D)){return false;}
       if(this.x===vector.x&&this.y===vector.y){return true;}
     }
-    static add(vector1,V2D){
-      if(!(vector1 instanceof Vector2D)){return false;}
-      if(!(V2D instanceof Vector2D)){return false;}
-      let x=vector1.x+V2D.x;
-      let y=vector1.y+V2D.y
-      return new Vector2D(x,y);
+    static add(vector1,vector2){
+        if(!(vector1 instanceof Vector2D)){return false;}
+        if(!(vector2 instanceof Vector2D)){return false;}
+        let x=vector1.x+vector2.x;
+        let y=vector1.y+vector2.y
+        return new Vector2D(x,y);
+    }
+    static difference(vector1,vector2){
+        if(!(vector1 instanceof Vector2D)){return false;}
+        if(!(vector2 instanceof Vector2D)){return false;}    
+        let x=vector1.x-vector2.x;
+        let y=vector1.y-vector2.y
+        return new Vector2D(x,y);
     }
     scale(n){
       return new Vector2D(this.x*n,this.y*n);
